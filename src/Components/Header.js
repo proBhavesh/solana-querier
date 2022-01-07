@@ -3,10 +3,12 @@ import { blockData } from "../APIs/APIcaller.js";
 
 const Header = () => {
 	const [data, setData] = useState();
-	useEffect(async () => {
-		const dta = await blockData();
-		setData(await dta.data);
-		console.log(await dta.data.data.solana.blockRewards);
+	useEffect(() => {
+		const mnfn = async () => {
+			const dta = await blockData();
+			setData(await dta.data);
+			console.log(await dta.data.data.solana.blockRewards);
+		};
 	}, []);
 	console.log(data);
 
