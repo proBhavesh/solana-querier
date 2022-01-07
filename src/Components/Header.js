@@ -9,6 +9,7 @@ const Header = () => {
 			setData(await dta.data);
 			console.log(await dta.data.data.solana.blockRewards);
 		};
+		mnfn();
 	}, []);
 	console.log(data);
 
