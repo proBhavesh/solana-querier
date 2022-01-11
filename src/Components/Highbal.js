@@ -14,7 +14,7 @@ const Highbal = () => {
 	}, []);
 	console.log(data);
 
-	if (data == undefined) {
+	if (data === undefined) {
 		return (
 			<React.Fragment>
 				<div className="loading-animation">
